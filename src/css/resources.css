@@ -1,0 +1,518 @@
+:root {
+    --secondary-color: #ffff;
+}
+
+html {
+    font-size: 58.5%;
+}
+
+
+/* Default styles for smaller screens (mobile-first) */
+body {
+    max-width: 480px;
+    margin: 0;
+    padding: 0;
+    border: 3px solid black;
+}
+
+main {
+    padding: 0rem 0rem;
+}
+
+.container {
+    margin: 3rem 1rem;
+}
+
+.banner {
+    position: absolute;
+    max-height: 56rem;
+}
+
+.banner_one_section {
+   
+    position: relative;
+}
+
+.banner_one_image  {
+    height: 34rem;
+    border: 3px solid blue;
+    opacity: 0.4;
+    background: url("../assests/img/floweroverbook.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: left;
+
+}
+
+.banner_one_information {
+    position: absolute;  
+    top: 0;
+    padding: 4rem 1rem;
+}
+
+.banner_two_image img {
+    max-width: 56rem;
+    width: 100%;
+    opacity: 0.4;
+    height: 50rem;
+    max-height: 50rem;
+    z-index: 0;
+}
+
+.header {
+    color: blue;
+}
+
+.video_information {
+    padding: 3rem 1rem;
+}
+
+.play_button {
+    position: relative;
+    left: 50%;
+    top: 5rem;
+    transform: translate(-50%, -50%);
+}
+
+/* Information Section */
+.information_section {
+    padding: 0rem .5rem;
+}
+
+/* Popular Section */
+.popular_resources {
+    padding: 0;
+}
+
+.popular_resources_details {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+
+.load_more p {
+    color: blue;
+    font-size: 1.8rem;
+}
+
+.load_more button:hover {
+    box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.load_more button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.1rem;
+    color: blue;
+    flex-shrink: 0;
+    height: 5.6rem;
+    width: 18.9rem;
+    border-radius: 8px;
+    margin-right: 2.3rem;
+    background: var(--secondary-color);
+    border: 2px solid rgb(127, 127, 224);
+}
+
+/* Banner Two */
+.banner_two {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+}
+
+.banner_two_image {
+    position: relative;
+    flex: 1;
+}
+
+.banner_two_card {
+    padding: 1rem 1rem 1rem 1rem;
+    position: absolute;
+    max-width: 45rem;
+    width: 90%;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+}
+
+.banner_two_card_information {
+    position: relative;
+    bottom: 2.5rem;
+}
+
+.toogle_button {
+    display: flex;
+    justify-content: end;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+}
+
+.font {
+    font-size: 1.6rem;
+    color:rgb(154,154,155);
+}
+
+.header {
+    color: rgb(34, 34, 39);
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: normal;
+}
+
+.sub_header {
+    display: flex;
+    gap: 2rem;
+}
+
+.blog_section, .play_buttons {
+    margin-top: 1rem;
+}
+
+.blog_section article {
+    font-size: 1.8rem;
+    line-height: normal;
+}
+
+.watch_now_button  {
+    background: var(--Primary-blue, #0a66c2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.1rem;
+    flex-shrink: 0;
+    height: 5.6rem;
+    width: 18.9rem;
+    border-radius: 8px;
+    color: white;
+    margin-right: 2.3rem;
+    font-size: 1.8rem;
+  }
+  
+  .watch_now_button:hover {
+    background: var(--Primary-white, #ffff);
+    border: .1rem solid blue;
+    color: blue;
+    transition: 2s ease-in-out;
+  }
+  
+/* toogle_button */
+/* .switch {
+    display: -webkit-inline-box;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+
+} */
+
+.switch input {
+    opacity: 0.4;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 3.4rem; /* Moved border-radius from .slider.round to .slider */
+    transition: .4s;
+    -webkit-transition: .4s;
+    position: relative;
+    display: inline-block;
+    width: 7rem;
+    height: 3.4rem;
+    
+}
+
+.slider:before {
+    position: absolute;
+    content: ""; /* Added content property */
+    height: 2.6rem;
+    width: 2.6rem;
+    left: .4rem;
+    bottom: .4rem;
+    background-color: white;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(3.5rem);
+}
+
+/* Resources Categories */
+.category_section {
+    position: relative;
+}
+
+.toggle_btn {
+    background-color: #ffff;
+    cursor: pointer;
+    font-size: 2rem;
+    color: blue;
+}
+
+.up_arrow {
+    display: none;
+}
+
+.down_arrow {
+    display: inline-block;
+}
+
+.toggle_active {
+    display: inline-block;
+    transition: 2s ease-in-out;
+}
+
+.category_section_left_card {
+    position: absolute;
+    height: fit-content;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    left: 0;
+    width: 60%;
+    background-color: #fff;
+    margin: 0rem 0rem;
+    padding: 0rem 1rem 3rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 0rem 0.2rem 0.6rem 0rem rgba(0, 0, 0, 0.25);
+    display: none;
+}
+
+.category_header {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.category_lists article {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+
+
+/* Right Card Section */
+.category_section_right_card {
+    display: grid;
+    place-content: center;
+    row-gap: 2rem;
+    margin-top: 2rem;
+}
+
+.category_section_right_card_details {
+    max-width: 30rem;
+    box-shadow: 0rem 0.2rem 0.6rem 0rem rgba(0, 0, 0, 0.25);
+    border-radius: 0.8rem;
+    padding: 1rem 2rem;
+
+}
+
+.category_section_right_card_image img {
+    width: 100%;
+    height: 20rem;
+}
+
+/* Paginatio */
+/* .pagination,
+.pagination_links,
+.link,
+ button,
+.previous_btns,
+.next_btns {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+    justify-content: center;
+}
+
+
+.button i,
+.link {
+    background-color: #ffff;
+    border-radius: .8rem;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    border: .2px solid #f0f0f1;
+    padding: 0.12rem;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.button {
+    border: none;
+    padding: 0.3rem;
+
+}
+
+.button:disabled {
+    color:#b3b3b3;
+    pointer-events: none;
+
+}
+
+.button i:hover,
+.fa-solid:hover,
+.link:hover {
+    color: #ffff;
+    background-color: #2196F3;
+    cursor: pointer;
+}
+
+.link.active {
+    color: #ffff;
+    background-color: #2196F3;
+    cursor: pointer;
+}
+
+
+
+.pagination ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.left_buttons_arrow {
+    border: ;
+    background-color: #ffff;
+    border: none;
+}
+
+.pagination ul li {
+
+    list-style: none;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+ */
+
+
+ .pagination ul {
+    margin: .5rem 0 .2rem 0;
+    border-radius: 8px;
+    padding: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  
+ }
+
+ .pagination ul li { 
+    list-style: none;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 4.5rem;
+
+ }
+
+ .pagination ul li .numb {
+    padding: 0rem 0rem;
+    
+ }
+
+ul .button {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+ button  {
+    border: none;
+ }
+
+.pagination .dots {
+    cursor: default;
+}
+ 
+ .pagination .numb,
+ .button button{
+    background-color: #fff;
+    border: 1.25px solid #F1F1F1;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .6rem;
+
+ } 
+
+ .pagination  .active,
+ .pagination ul .numb:hover,
+ .pagination ul button:hover {
+    color: #ffff;
+    background-color: #0a66c2;
+ }
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query for screens with a minimum width of 768px */
+/* @media only screen and (min-width: 768px) {
+    body {
+        max-width: 768px;
+        border: 3px solid blue;
+    }
+
+    .video_background img {
+        max-width: 8rem;
+    }
+
+    .header {
+        color: var(--secondary-color);
+    }
+} */
